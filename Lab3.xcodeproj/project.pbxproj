@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		9BD3F5640B223D95914F111D /* Pods_Lab3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E041631EE7C200C88DD4F1 /* Pods_Lab3.framework */; };
 		A51F4E261E36C4EC00DA03B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F4E251E36C4EC00DA03B9 /* AppDelegate.swift */; };
-		A51F4E281E36C4EC00DA03B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F4E271E36C4EC00DA03B9 /* ViewController.swift */; };
 		A51F4E2B1E36C4EC00DA03B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51F4E291E36C4EC00DA03B9 /* Main.storyboard */; };
 		A51F4E2D1E36C4EC00DA03B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51F4E2C1E36C4EC00DA03B9 /* Assets.xcassets */; };
 		A51F4E301E36C4EC00DA03B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51F4E2E1E36C4EC00DA03B9 /* LaunchScreen.storyboard */; };
+		A51F4E3F1E36DAFC00DA03B9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F4E3E1E36DAFC00DA03B9 /* MainViewController.swift */; };
+		A51F4E421E36DF7900DA03B9 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F4E411E36DF7900DA03B9 /* MainNavigationController.swift */; };
+		A51F4E461E36E20000DA03B9 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F4E451E36E20000DA03B9 /* MessageModel.swift */; };
+		A51F4E4A1E36E4D800DA03B9 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F4E491E36E4D800DA03B9 /* ChatManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +23,16 @@
 		75C96000D0C0834B744B38E1 /* Pods-Lab3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lab3.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lab3/Pods-Lab3.release.xcconfig"; sourceTree = "<group>"; };
 		A51F4E221E36C4EC00DA03B9 /* Lab3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51F4E251E36C4EC00DA03B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A51F4E271E36C4EC00DA03B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A51F4E2A1E36C4EC00DA03B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A51F4E2C1E36C4EC00DA03B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A51F4E2F1E36C4EC00DA03B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A51F4E311E36C4EC00DA03B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A51F4E391E36D96300DA03B9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		A51F4E3A1E36D96300DA03B9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A51F4E3E1E36DAFC00DA03B9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A51F4E411E36DF7900DA03B9 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		A51F4E451E36E20000DA03B9 /* MessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		A51F4E491E36E4D800DA03B9 /* ChatManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
 		B8E041631EE7C200C88DD4F1 /* Pods_Lab3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lab3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -79,13 +87,80 @@
 			isa = PBXGroup;
 			children = (
 				A51F4E251E36C4EC00DA03B9 /* AppDelegate.swift */,
-				A51F4E271E36C4EC00DA03B9 /* ViewController.swift */,
+				A51F4E3B1E36DAFC00DA03B9 /* Source */,
 				A51F4E291E36C4EC00DA03B9 /* Main.storyboard */,
 				A51F4E2C1E36C4EC00DA03B9 /* Assets.xcassets */,
 				A51F4E2E1E36C4EC00DA03B9 /* LaunchScreen.storyboard */,
 				A51F4E311E36C4EC00DA03B9 /* Info.plist */,
 			);
 			path = Lab3;
+			sourceTree = "<group>";
+		};
+		A51F4E3B1E36DAFC00DA03B9 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A51F4E471E36E4CC00DA03B9 /* Managers */,
+				A51F4E431E36E1D900DA03B9 /* Models */,
+				A51F4E3C1E36DAFC00DA03B9 /* Controllers */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A51F4E3C1E36DAFC00DA03B9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A51F4E401E36DF6000DA03B9 /* MainNavigationController */,
+				A51F4E3D1E36DAFC00DA03B9 /* MainViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A51F4E3D1E36DAFC00DA03B9 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A51F4E3E1E36DAFC00DA03B9 /* MainViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		A51F4E401E36DF6000DA03B9 /* MainNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				A51F4E411E36DF7900DA03B9 /* MainNavigationController.swift */,
+			);
+			path = MainNavigationController;
+			sourceTree = "<group>";
+		};
+		A51F4E431E36E1D900DA03B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A51F4E441E36E1F700DA03B9 /* MessageModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A51F4E441E36E1F700DA03B9 /* MessageModel */ = {
+			isa = PBXGroup;
+			children = (
+				A51F4E451E36E20000DA03B9 /* MessageModel.swift */,
+			);
+			path = MessageModel;
+			sourceTree = "<group>";
+		};
+		A51F4E471E36E4CC00DA03B9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A51F4E481E36E4CC00DA03B9 /* ChatManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A51F4E481E36E4CC00DA03B9 /* ChatManager */ = {
+			isa = PBXGroup;
+			children = (
+				A51F4E491E36E4D800DA03B9 /* ChatManager.swift */,
+			);
+			path = ChatManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A51F4E281E36C4EC00DA03B9 /* ViewController.swift in Sources */,
+				A51F4E4A1E36E4D800DA03B9 /* ChatManager.swift in Sources */,
+				A51F4E421E36DF7900DA03B9 /* MainNavigationController.swift in Sources */,
 				A51F4E261E36C4EC00DA03B9 /* AppDelegate.swift in Sources */,
+				A51F4E3F1E36DAFC00DA03B9 /* MainViewController.swift in Sources */,
+				A51F4E461E36E20000DA03B9 /* MessageModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +302,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A51F4E2A1E36C4EC00DA03B9 /* Base */,
+				A51F4E391E36D96300DA03B9 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -232,6 +311,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A51F4E2F1E36C4EC00DA03B9 /* Base */,
+				A51F4E3A1E36D96300DA03B9 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -243,6 +323,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -292,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -377,6 +459,7 @@
 				A51F4E361E36C4EC00DA03B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
