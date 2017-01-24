@@ -31,16 +31,22 @@ class MessageModel {
         var timeText = ""
         if minuteTimeDelta < 1 {
             // seconds presentation
-            timeText = "\(String(format: "%.0f", timeDelta)) seconds ago"
+            
+            timeText = String(format: NSLocalizedString("%.0f seconds ago", comment: "seconds ago"), timeDelta)
+//            timeText = "\(String(format: "%.0f", timeDelta)) seconds ago"
         } else if minuteTimeDelta > 59 {
             // hour presentation
-            timeText = "\(Int(minuteTimeDelta / 60)) hours ago"
+            timeText = String(format: NSLocalizedString("%.0f hours ago", comment: "hours ago"), Int(minuteTimeDelta / 60))
+//            timeText = "\(Int(minuteTimeDelta / 60)) hours ago"
         } else {
-            timeText = "\(String(format: "%.0f", minuteTimeDelta)) minutes ago"
             // minute presentation
+            timeText = String(format: NSLocalizedString("%.0f minutes ago", comment: "minutes ago"), minuteTimeDelta)
+//            timeText = "\(String(format: "%.0f", minuteTimeDelta)) minutes ago"
+            
         }
         
-        let messageText = "\(author) says: \(message)"
+        let messageText = String(format: NSLocalizedString("%@ says: %@", comment: "Author says: Message text"), author, message)
+//        let messageText = "\(author) says: \(message)"
         
         cell.textLabel?.text = timeText
         cell.detailTextLabel?.text = messageText

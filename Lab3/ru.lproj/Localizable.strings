@@ -1,0 +1,21 @@
+/* hours ago */
+"%.0f hours ago" = "%.0f часа(ов) назад";
+
+/* minutes ago */
+"%.0f minutes ago" = "%.0f минут назад";
+
+/* seconds ago */
+"%.0f seconds ago" = "%.0f секунд назад";
+
+/* Author says: Message text */
+"%@ says: %@" = "%1$@ сказал: %2$@";
+
+"New message" = "Новое сообщение";
+
+"Please state your name and message" = "Пожалуйста введите ваше имя и сообщение";
+
+"Send" = "Отправить";
+
+"Your message" = "Ваше Сообщение";
+
+"Your name" = "Ваше Имя";

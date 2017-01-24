@@ -16,6 +16,9 @@
 		A51F4E421E36DF7900DA03B9 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F4E411E36DF7900DA03B9 /* MainNavigationController.swift */; };
 		A51F4E461E36E20000DA03B9 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F4E451E36E20000DA03B9 /* MessageModel.swift */; };
 		A51F4E4A1E36E4D800DA03B9 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F4E491E36E4D800DA03B9 /* ChatManager.swift */; };
+		A51F4E581E36F07300DA03B9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A51F4E5A1E36F07300DA03B9 /* Localizable.strings */; };
+		A51F4E611E36F54900DA03B9 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F4E601E36F54900DA03B9 /* StringExtension.swift */; };
+		A51F4E641E36F80300DA03B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A51F4E661E36F80300DA03B9 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,12 +30,19 @@
 		A51F4E2C1E36C4EC00DA03B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A51F4E2F1E36C4EC00DA03B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A51F4E311E36C4EC00DA03B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A51F4E391E36D96300DA03B9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
-		A51F4E3A1E36D96300DA03B9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A51F4E3E1E36DAFC00DA03B9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A51F4E411E36DF7900DA03B9 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		A51F4E451E36E20000DA03B9 /* MessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		A51F4E491E36E4D800DA03B9 /* ChatManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
+		A51F4E4B1E36EF0100DA03B9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		A51F4E4C1E36EF0100DA03B9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A51F4E4D1E36EF0800DA03B9 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Main.strings; sourceTree = "<group>"; };
+		A51F4E4E1E36EF0800DA03B9 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A51F4E591E36F07300DA03B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A51F4E5B1E36F07500DA03B9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A51F4E5C1E36F07700DA03B9 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A51F4E601E36F54900DA03B9 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		A51F4E651E36F80300DA03B9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B8E041631EE7C200C88DD4F1 /* Pods_Lab3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lab3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,12 +96,14 @@
 		A51F4E241E36C4EC00DA03B9 /* Lab3 */ = {
 			isa = PBXGroup;
 			children = (
+				A51F4E661E36F80300DA03B9 /* InfoPlist.strings */,
 				A51F4E251E36C4EC00DA03B9 /* AppDelegate.swift */,
 				A51F4E3B1E36DAFC00DA03B9 /* Source */,
 				A51F4E291E36C4EC00DA03B9 /* Main.storyboard */,
 				A51F4E2C1E36C4EC00DA03B9 /* Assets.xcassets */,
 				A51F4E2E1E36C4EC00DA03B9 /* LaunchScreen.storyboard */,
 				A51F4E311E36C4EC00DA03B9 /* Info.plist */,
+				A51F4E5A1E36F07300DA03B9 /* Localizable.strings */,
 			);
 			path = Lab3;
 			sourceTree = "<group>";
@@ -99,6 +111,7 @@
 		A51F4E3B1E36DAFC00DA03B9 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				A51F4E5D1E36F53700DA03B9 /* Utilities */,
 				A51F4E471E36E4CC00DA03B9 /* Managers */,
 				A51F4E431E36E1D900DA03B9 /* Models */,
 				A51F4E3C1E36DAFC00DA03B9 /* Controllers */,
@@ -163,6 +176,30 @@
 			path = ChatManager;
 			sourceTree = "<group>";
 		};
+		A51F4E5D1E36F53700DA03B9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A51F4E5E1E36F53700DA03B9 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A51F4E5E1E36F53700DA03B9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A51F4E5F1E36F53700DA03B9 /* StringExtension */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A51F4E5F1E36F53700DA03B9 /* StringExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A51F4E601E36F54900DA03B9 /* StringExtension.swift */,
+			);
+			path = StringExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -210,6 +247,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				pl,
 			);
 			mainGroup = A51F4E191E36C4EC00DA03B9;
 			productRefGroup = A51F4E231E36C4EC00DA03B9 /* Products */;
@@ -227,8 +266,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A51F4E301E36C4EC00DA03B9 /* LaunchScreen.storyboard in Resources */,
+				A51F4E581E36F07300DA03B9 /* Localizable.strings in Resources */,
 				A51F4E2D1E36C4EC00DA03B9 /* Assets.xcassets in Resources */,
 				A51F4E2B1E36C4EC00DA03B9 /* Main.storyboard in Resources */,
+				A51F4E641E36F80300DA03B9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +330,7 @@
 			files = (
 				A51F4E4A1E36E4D800DA03B9 /* ChatManager.swift in Sources */,
 				A51F4E421E36DF7900DA03B9 /* MainNavigationController.swift in Sources */,
+				A51F4E611E36F54900DA03B9 /* StringExtension.swift in Sources */,
 				A51F4E261E36C4EC00DA03B9 /* AppDelegate.swift in Sources */,
 				A51F4E3F1E36DAFC00DA03B9 /* MainViewController.swift in Sources */,
 				A51F4E461E36E20000DA03B9 /* MessageModel.swift in Sources */,
@@ -302,7 +344,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				A51F4E2A1E36C4EC00DA03B9 /* Base */,
-				A51F4E391E36D96300DA03B9 /* ru */,
+				A51F4E4B1E36EF0100DA03B9 /* ru */,
+				A51F4E4D1E36EF0800DA03B9 /* pl */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -311,9 +354,28 @@
 			isa = PBXVariantGroup;
 			children = (
 				A51F4E2F1E36C4EC00DA03B9 /* Base */,
-				A51F4E3A1E36D96300DA03B9 /* ru */,
+				A51F4E4C1E36EF0100DA03B9 /* ru */,
+				A51F4E4E1E36EF0800DA03B9 /* pl */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A51F4E5A1E36F07300DA03B9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51F4E591E36F07300DA03B9 /* en */,
+				A51F4E5B1E36F07500DA03B9 /* ru */,
+				A51F4E5C1E36F07700DA03B9 /* pl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		A51F4E661E36F80300DA03B9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A51F4E651E36F80300DA03B9 /* ru */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

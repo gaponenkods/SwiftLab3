@@ -1,6 +1,6 @@
+
 /* Class = "UINavigationItem"; title = "Shoutbox"; ObjectID = "8b5-vx-tnq"; */
-"8b5-vx-tnq.title" = "Мини-Чат";
+"8b5-vx-tnq.title" = "Shoutbox";
 
 /* Class = "UIBarButtonItem"; title = "Compose"; ObjectID = "Rs8-Mz-L90"; */
-"Rs8-Mz-L90.title" = "Создать";
-
+"Rs8-Mz-L90.title" = "Compose";

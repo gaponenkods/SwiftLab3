@@ -70,33 +70,35 @@ class MainViewController: UIViewController {
     
     func messageAlert() {
         
-        let alertController = UIAlertController(title: "New message", message: "Please state your name and message", preferredStyle: .alert)
+        
+        
+        let alertController = UIAlertController(title: String(format: NSLocalizedString("New message", comment: "New message")), message: "Please state your name and message".localized(), preferredStyle: .alert)
         alertController.addTextField(configurationHandler: { textField in
-            textField.placeholder = "Your name"
+            textField.placeholder = "Your name".localized()
         } )
         alertController.addTextField(configurationHandler: { textField in
-            textField.placeholder = "Your message"
+            textField.placeholder = "Your message".localized()
         } )
-        let sendAction = UIAlertAction(title: "Send", style: .default, handler: { action in
+        let sendAction = UIAlertAction(title: "Send".localized(), style: .default, handler: { action in
             guard let name = alertController.textFields?[0].text,
                 let message = alertController.textFields?[1].text else {
                     return
             }
             
             ChatManager.sharedInstanse.sendMessageBy(author: name, message: message, completionHandler: { (isSuccess) in
-                let textInfo = isSuccess ? "Your message send successfully" : "Your message isn't send"
+                let textInfo = isSuccess ? "Your message send successfully".localized() : "Your message isn't send".localized()
                 self.informationAlertWith(textMessage: textInfo)
             })
         })
         alertController.addAction(sendAction)
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in })
+        let cancelAction = UIAlertAction(title: "Cancel".localized(), style: .cancel, handler: { _ in })
         alertController.addAction(cancelAction)
         self.present(alertController, animated: true, completion: { _ in })
     }
     
     func informationAlertWith(textMessage: String) {
-        let alert = UIAlertController(title: "Information", message: textMessage, preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        let alert = UIAlertController(title: "Information".localized(), message: textMessage, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "OK".localized(), style: .cancel, handler: nil)
         alert.addAction(alertAction)
         self.present(alert, animated: true, completion: nil)
     }
